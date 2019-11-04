@@ -3,7 +3,7 @@ import Marker from './marker';
 
 const Map = () => {
   return (
-    <div className="map">
+    <div className="map-container">
       <h1>Hello from Map component!</h1>
       <Marker />
     </div>
