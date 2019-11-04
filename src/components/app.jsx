@@ -1,4 +1,5 @@
 import React from 'react';
+import flats from '../../data/flats';
 import FlatList from './flat_list';
 import Map from './map';
 
