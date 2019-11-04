@@ -1,8 +1,13 @@
 import React from 'react';
+import FlatList from './flat_list';
+import Map from './map';
 
 const App = () => {
   return (
-    <h1>Hello from App component!</h1>
+    <div className="app">
+      <FlatList />
+      <Map />
+    </div>
   );
 };
 
