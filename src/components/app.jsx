@@ -6,8 +6,7 @@ import SimpleMap from './simple_map';
 const App = () => {
   return (
     <div className="app">
-      <FlatList />
-      <SimpleMap />
+      <FlatList flats={flats} />
     </div>
   );
 };
