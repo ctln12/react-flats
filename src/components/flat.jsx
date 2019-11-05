@@ -1,17 +1,19 @@
 import React from 'react';
 
-const Flat = () => {
+const Flat = (props) => {
+  const { flatInfo } = props;
   return (
-    <div className="card">
-      <div className="card-category">150 EUR</div>
-      <div className="card-description">
-        <h2>Super 60m2 in trendy neighborhood!</h2>
+    <div className="card" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(${flatInfo.imageUrl})` }}>
+      <div className="card-category">
+        {flatInfo.price}
+        {flatInfo.priceCurrency}
       </div>
-      <a className="card-link" href="#" />
+      <div className="card-description">
+        <h2>{flatInfo.name}</h2>
+      </div>
+      <a className="card-link" href="#"></a>
     </div>
   );
 };
-
-// style='background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url(https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat3.jpg;);'
 
 export default Flat;
