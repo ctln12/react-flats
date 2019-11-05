@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     const { selectedFlat, allFlats } = this.state;
     return (
-      <div className="app">
+      <div>
         <FlatList
           flats={allFlats}
           selectedFlat={selectedFlat}
