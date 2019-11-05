@@ -1,11 +1,11 @@
 import React from 'react';
 import Flat from './flat';
 
-const FlatList = () => {
+const FlatList = (props) => {
+  const { flats } = props;
   return (
     <div className="flat-list">
-      <h1>Hello from FlatList component!</h1>
-      <Flat />
+      {flats.map(flat => <Flat flatInfo={flat} key={flat.id} />)}
     </div>
   );
 };
