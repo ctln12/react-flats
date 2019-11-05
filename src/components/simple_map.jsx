@@ -38,10 +38,10 @@ const apiIsLoaded = (map, maps, places) => {
 class SimpleMap extends Component {
   static defaultProps = {
     center: {
-      lat: 59.95,
-      lng: 30.33
+      lat: 48.9800469,
+      lng: 1.3605425
     },
-    zoom: 11
+    zoom: 8
   };
 
   render() {
@@ -55,8 +55,8 @@ class SimpleMap extends Component {
           onGoogleApiLoaded={({ map, maps }) => apiIsLoaded(map, maps, places)}
         >
           <AnyReactComponent
-            lat={59.955413}
-            lng={30.337844}
+            lat={48.9800469}
+            lng={1.3605425}
             text="My Marker"
           />
         </GoogleMapReact>
